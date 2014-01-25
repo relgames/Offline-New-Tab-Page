@@ -1,0 +1,25 @@
+{
+	"name": "Offline New Tab Page",
+	"version": "1.0",
+	"description": "Disables Google's online/Google+/ad sections of the New Tab page.",
+	"author": "Jeremiah Megel",
+	"minimum_chrome_version": "18",
+	"permissions": [
+		"tabs",
+		"webRequest",
+		"webRequestBlocking",
+		"*://*.google.com/_/chrome/newtab*"
+	],
+	"background": {
+		"scripts": [
+			"background.js"
+		],
+		"persistent": true
+	},
+	"icons": {
+		"16": "images/16.png",
+		"48": "images/48.png",
+		"128": "images/128.png"
+	},
+	"manifest_version": 2
+}
